@@ -1,33 +1,67 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>70DA</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-  <header class="hero">
-    <h1 class="hero-title">70DA</h1>
-    <p class="hero-subtitle">Creative Web Developer & Designer</p>
-    <a href="#about" class="hero-btn">Explore</a>
+  <header>
+    <div class="logo">70DA</div>
+    <nav>
+      <ul>
+        <li><a href="#hero">الرئيسية</a></li>
+        <li><a href="#about">من أنا</a></li>
+        <li><a href="#services">الخدمات</a></li>
+        <li><a href="#portfolio">الأعمال</a></li>
+        <li><a href="#contact">تواصل</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <section id="about" class="section">
-    <h2>About Me</h2>
-    <p>I am 70DA, a passionate developer focused on building stylish and performant websites.</p>
+  <section id="hero">
+    <div class="overlay"></div>
+    <div class="content" data-aos="fade-up">
+      <h1>أنا 70DA</h1>
+      <p>مصمم ومطور ويب - بناء مواقع احترافية</p>
+    </div>
   </section>
 
-  <section id="contact" class="section">
-    <h2>Contact</h2>
-    <p>Get in touch: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+  <section id="about" data-aos="fade-up">
+    <h2>من أنا</h2>
+    <p>مطور ومصمم مواقع متخصص في تصميم واجهات جذابة وتفاعلية باستخدام أحدث التقنيات.</p>
+  </section>
+
+  <section id="services" data-aos="fade-up">
+    <h2>الخدمات</h2>
+    <ul>
+      <li>تصميم مواقع ويب</li>
+      <li>برمجة واجهات أمامية</li>
+      <li>تجربة مستخدم UX/UI</li>
+    </ul>
+  </section>
+
+  <section id="portfolio" data-aos="fade-up">
+    <h2>الأعمال</h2>
+    <p>سيتم إضافة نماذج من أعمالي هنا.</p>
+  </section>
+
+  <section id="contact" data-aos="fade-up">
+    <h2>تواصل معي</h2>
+    <p>راسلني على: example@email.com</p>
   </section>
 
   <footer>
-    <p>© 2025 70DA. All rights reserved.</p>
+    <p>© 2025 70DA - جميع الحقوق محفوظة</p>
   </footer>
 
-  <script src="script.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
